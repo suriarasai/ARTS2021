@@ -28,10 +28,10 @@ public class KafkaTwitterProducer {
 	     KafkaProducer kafkaProducer = new KafkaProducer(props);
 	     
 	    	BlockingQueue<String> queue = new LinkedBlockingQueue<String>(1000);
-	    	   String consumerKey = "FZLSjLEjTuo6PKZuBO2SliDRV";
-	           String consumerSecret = "3YwLrtMZyQsoimid8bjBI5kZEnIo12c8qvGnxUXbC65ozdKKrE";
-	           String accessToken = "322712118-HEKzvlE6FFaAZNVBDGeWgvMvw8baIxBuuu29FjSX";
-	           String accessTokenSecret = "BcUSJ2bUfiMES0FDxaWV4Sh0Qf9AjzT5lfn3ls5CXKwAc";
+	    	   String consumerKey = "";
+	           String consumerSecret = "";
+	           String accessToken = "";
+	           String accessTokenSecret = "";
 	           String topicName = "twitter";
 	           
 	           ConfigurationBuilder cb = new ConfigurationBuilder();
