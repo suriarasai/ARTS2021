@@ -23,9 +23,10 @@ public class ProducerDemo {
 		producerProps.put("buffer.memory", 24568545);
 		KafkaProducer<String, String> producer = new KafkaProducer<String, String>(producerProps);
 
-		for (int i = 0; i < 2000; i++) {
-			ProducerRecord data = new ProducerRecord<String, String>("test1", "Hello this is record " + i);
+		for (int i = 0; i < 20; i++) {
+			ProducerRecord<String, String> data = new ProducerRecord<String, String>("test1", "Hello this is record " + i);
 			Future<RecordMetadata> recordMetadata = producer.send(data);
+			System.out.println(recordMetadata);
 		}
 		producer.close();
 
